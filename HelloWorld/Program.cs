@@ -13,7 +13,7 @@ namespace HelloWorld
             //part one greetings statement
             //string messageOne = "";
             //messageOne = "Hello World!";
-            //string messageTwo = "I am Spartacus";
+            string messageTwo = "I am Spartacus";
 
             ////Part Two initial Spartacus attributes
             //int ageOne = 35;
@@ -127,8 +127,8 @@ namespace HelloWorld
             //Console.WriteLine("What is your age soldier?");
             //int age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is your job soldier?");
-            string job = Console.ReadLine();
+            //Console.WriteLine("What is your job soldier?");
+            //string job = Console.ReadLine();
 
             //if ((rank == "officer") || (age <= 26))
             ////Solicit user input example
@@ -143,30 +143,63 @@ namespace HelloWorld
             //{
             //    Console.WriteLine("Sorry you are staying home.");
 
-             switch (job)
-                {
-                    case "infantry":
-                        Console.WriteLine("You will carry a sword");
-                    break;
+            //switch (job)
+            //   {
+            //       case "infantry":
+            //           Console.WriteLine("You will carry a sword");
+            //       break;
 
-                    case "archer":
-                        Console.WriteLine("You will carry a bow and arrow");
-                    break;
+            //       case "archer":
+            //           Console.WriteLine("You will carry a bow and arrow");
+            //       break;
 
-                    case "supply":
-                        Console.WriteLine("You will carry pots and pans");
-                    break;
+            //       case "supply":
+            //           Console.WriteLine("You will carry pots and pans");
+            //       break;
 
-                    case "specialist":
-                        Console.WriteLine("You will opperate the catapault");
-                    break;
+            //       case "specialist":
+            //           Console.WriteLine("You will opperate the catapault");
+            //       break;
 
-                    default:
-                        Console.WriteLine("You will ride horseback");
-                        break;
-                }
+            //       default:
+            //           Console.WriteLine("You will ride horseback");
+            //           break;
+
+            //Part 13 array examples
+            string[] foodList = new string[5];
+            foodList[0] = "Milk";
+            foodList[1] = "Fruit";
+            foodList[2] = "Meat";
+            foodList[3] = "Wine";
+            foodList[4] = "Bread";
+
+            Console.WriteLine(foodList[0]);
+            Console.WriteLine(foodList[1]);
+            Console.WriteLine(foodList[2]);
+            Console.WriteLine(foodList[3]);
+            Console.WriteLine(foodList[4]);
+
+            Console.WriteLine("{0},{1}, {2}, {4}, ", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+
+            int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 1500 };
+            Console.WriteLine(foodAmount[0] + ", " + foodAmount[1] + ", " + foodAmount[2] + ", " + foodAmount[3] + ", " + foodAmount[4]);
+
+            Console.WriteLine(foodList.Length);
+
+            string[] elements = messageTwo.Split(' ');
+            Console.WriteLine(elements[0]);
+            Console.WriteLine(elements[1]);
+            Console.WriteLine(elements[2]);
+
+            String myName = "Sue";
+            char[] letters = myName.ToCharArray();
+
+            Console.WriteLine(letters[0]);
+            Console.WriteLine(letters[1]);
+            Console.WriteLine(letters[2]);
+        }
 
             
-        }
+        
     }
 }
